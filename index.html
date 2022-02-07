@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:300,300italic,regular,italic,700,700italic,900,900italic&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css"
+      integrity="sha512-BnbUDfEUfV0Slx6TunuB042k9tuKe3xrD6q4mg5Ed72LTgzDIcLPxg6yI2gcMFRyomt+yJJxE+zJwNmxki6/RA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Modal</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__body">
+          <a href="#" class="header__link">
+            <img src="./img/Logo.png" alt="logo" />
+          </a>
+          <nav class="header__nav">
+            <ul class="header__nav-menu menu-list">
+              <li><a href="#" class="menu-list__item _active">About</a></li>
+              <li><a href="#" class="menu-list__item">Help</a></li>
+              <li><a href="#" class="menu-list__item">Features</a></li>
+              <li><a href="#" class="menu-list__item">Signup</a></li>
+            </ul>
+          </nav>
+          <div class="menu-burger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="header__btn">
+            <button data-modal class="btn-modal">Contact us</button>
+          </div>
+        </div>
+      </div>
+      <div class="modal">
+        <div class="modal__dialog">
+          <div class="modal__content">
+            <form action="#">
+              <div data-close="true" class="modal__close">&times;</div>
+              <div class="modal__title">
+                We`ll contact you as soon as possible !
+              </div>
+              <input
+                type="text"
+                placeholder="Enter your name"
+                name="name"
+                required
+              />
+              <input
+                type="phone"
+                placeholder="Enter your phone"
+                name="phone"
+                required
+              />
+              <button class="modal__btn">Send</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="main-page">
+        <div class="container">
+          <div class="main-page__content">
+            <div class="text-content">
+              <h1 class="text-content__title">Save your data storage here.</h1>
+              <div class="text-content__description">
+                Data Warehouse is a data storage area that has been tested for
+                security, so you can store your data here safely but not be
+                afraid of being stolen by others.
+              </div>
+              <a href="#" class="text-content__link">Learn more</a>
+            </div>
+            <div class="img-content">
+              <img src="./img/page.png" alt="img" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="about">
+        <div class="container">
+          <div class="about__content">
+            <div class="about__img">
+              <img src="./img/about.png" alt="about" />
+            </div>
+            <div class="about__text text-about">
+              <h2 class="text-about__title">
+                We are a high-level data storage bank
+              </h2>
+              <div class="text-about__description">The place to store various data that you can access at any time through the internet  and where you can carry it. 
+                This very flexible storage area has a high level of security. To enter into your own data you must enter the password that you created when you registered in this Data Warehouse. </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
