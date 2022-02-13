@@ -17,7 +17,7 @@ window.addEventListener('DOMContentLoaded', () => {
       $HEADER_NAV.classList.add('show-header-nav');
       document.body.style.overflow = 'hidden';
     }
-    $BURGER.addEventListener('click', closeBurger);
+    $BURGER.addEventListener('click', closeBurger, {once: true});
   }
   function closeBurger(e) {
     if (e.target.parentElement == $BURGER) {
